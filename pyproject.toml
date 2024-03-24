@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "QuillAI"
+version = "0.0.1"
+description = ""
+authors = ["Pirate-Emperor"]
+readme = "README.md"
+package-mode = false 
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.111.0"
+motor = "^3.4.0"
+faker = "^25.2.0"
+fastapi-cors = "^0.0.6"
+pandas = "^2.2.2"
+better-profanity = "^0.7.0"
+pylint = "^3.2.2"
+transformers = "^4.41.1"
+torch = "^2.3.0"
+bandit = "^1.7.8"
+g4f = "^0.3.1.9"
+fuzzywuzzy = "^0.18.0"
+python-levenshtein = "^0.25.1"
+rapidfuzz = "^3.9.3"
+levenshtein = "^0.25.1"
+asyncpg = "^0.29.0"
+python-dotenv = "^1.0.1"
+curl-cffi = "^0.7.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
