@@ -1,0 +1,395 @@
+@charset "UTF-8";
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+html {
+  background-color: #cfd1d6;
+}
+
+.cantainer-n {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.App-header {
+  align-items: center;
+  background-color: #282c34;
+  color: rgb(43, 43, 43);
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .footer-content p {
+  margin: 0;
+  font-size: 14px;
+}
+footer .footer-content a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+footer .footer-content a:hover {
+  color: #ccc;
+}
+
+.categoryWidget {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  margin-left: 20px;
+  width: 200px;
+  height: 400px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.categoryWidget h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.categoryWidget ul {
+  list-style: none;
+  padding: 0;
+}
+.categoryWidget li {
+  margin-bottom: 10px;
+}
+.categoryWidget a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+.categoryWidget a:hover {
+  background-color: #f0f0f0;
+}
+@media (max-width: 499px) {
+  .categoryWidget {
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 0;
+  }
+  .categoryWidget h2 {
+    content: "ct";
+    margin-left: -3px;
+    padding: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  .categoryWidget ul {
+    flex-direction: column;
+  }
+  .categoryWidget ul li {
+    height: auto;
+    width: 20px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.link {
+  border-radius: 4px;
+  color: #555555;
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0.5rem;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: #c4c4c4;
+}
+.link.active {
+  background-color: #4a90e2;
+  color: white;
+}
+.link:hover {
+  background-color: #91918b;
+  color: white;
+}
+
+.link_post {
+  color: black;
+  text-decoration: none;
+  background-color: #e3e5f1;
+  padding: 4px;
+  border-radius: 5px;
+  margin: auto;
+}
+.link_post:hover {
+  color: #3a3a3a;
+  text-decoration: wavy;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.pagination button {
+  background-color: #f1f1f1;
+  border: none;
+  color: #333;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.pagination button:hover {
+  background-color: #ddd;
+}
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.pagination button.active {
+  background-color: #494949;
+  color: #fff;
+}
+
+.IndexPage {
+  display: flex;
+}
+
+.IndexAllPosts {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1019607843);
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 2rem;
+}
+.IndexAllPosts h1 {
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.IndexAllPosts li {
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #bebebe;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.0509803922);
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.IndexAllPosts li .category {
+  color: #888;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.IndexAllPosts li h2 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.IndexAllPosts li p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.IndexAllPosts li:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1019607843);
+  transform: translateY(-5px);
+}
+.IndexAllPosts ul {
+  list-style-type: none;
+  padding: 0;
+}
+.IndexAllPosts .posts {
+  display: flex; /* Разбить список на flexbox */
+  flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
+  justify-content: space-around; /* Распределить элементы равномерно */
+}
+.IndexAllPosts .posts .post {
+  flex: 1 0 300px;
+  margin: 10px;
+}
+@media (max-width: 768px) {
+  .IndexAllPosts .posts .posts .post {
+    flex: 1 0 50%;
+  }
+}
+@media (max-width: 499px) {
+  .IndexAllPosts {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.PostForm {
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1019607843);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  max-width: 500px;
+  padding: 1.5rem;
+}
+.PostForm button {
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 10px;
+  padding: 0.6rem 1rem;
+  transition: background-color 0.2s ease-in-out;
+  width: 100%;
+}
+.PostForm button:hover {
+  background-color: #c1c1c1;
+}
+.PostForm h2 {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.PostForm input, .PostForm textarea {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  padding: 0.6rem 0.8rem;
+  transition: border-color 0.2s ease-in-out;
+  width: 95%;
+}
+.PostForm input:focus, .PostForm textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+.PostForm label {
+  color: #555;
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.PostForm-preview {
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1019607843);
+  margin-right: 2rem;
+  padding: 1.5rem;
+  flex: 1;
+}
+.PostForm-preview h1 {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+@media (max-width: 499px) {
+  .PostForm {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .PostForm-preview {
+    flex: 1 0 100%;
+    overflow: scroll;
+    display: block;
+    overflow-wrap: 300px;
+  }
+  .PostForm {
+    flex: 1 0 100%;
+  }
+}
+.PostPage {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1019607843);
+}
+.PostPage h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.search-container .search-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.search-container .search-input:focus {
+  border-color: #3f95f1;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(63, 149, 241, 0.25);
+}
+.search-container .search-button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3f95f1;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+.search-container .search-button:hover {
+  background-color: #117bec;
+}
+
+/*# sourceMappingURL=styles.css.map */
