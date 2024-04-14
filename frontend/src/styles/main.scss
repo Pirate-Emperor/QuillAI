@@ -1,0 +1,24 @@
+// Utilities
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// Base
+@import 'base/reset';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/category';
+
+// Components
+@import 'components/link';
+@import 'components/pagination';
+
+// Pages
+@import 'pages/index';
+@import 'pages/post-form';
+@import 'pages/postpage';
+@import 'pages/searchpage';
+
+// compile by ...\frontend> npm run compile:sass
+// Compiled from src\styles\main.scss (current file) to src\styles.css
