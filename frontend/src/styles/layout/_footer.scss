@@ -1,0 +1,32 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+  
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  
+      p {
+        margin: 0;
+        font-size: 14px;
+      }
+  
+      a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 14px;
+  
+        &:hover {
+          color: #ccc;
+        }
+      }
+    }
+  }
+  
