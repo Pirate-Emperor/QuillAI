@@ -1,0 +1,60 @@
+.categoryWidget {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    margin-left: 20px; 
+    width: 200px; 
+    height: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+   a:hover {
+    background-color: #f0f0f0;
+  }
+  // Стили для маленьких экранов
+@media (max-width: 499px) {
+  width: 20px;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 0;
+  h2 {
+    content: "ct";
+    margin-left: -3px;
+    padding: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  ul {
+    flex-direction: column;
+    li {
+      height: auto;
+      width: 20px;
+      padding-bottom: 0px;
+      padding-left: 10px;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+  }
+}
+} 
