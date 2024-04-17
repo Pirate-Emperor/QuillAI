@@ -1,0 +1,91 @@
+.PostForm {
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px #0000001a;
+    //margin: 2rem auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 500px;
+    //min-width: 200px;
+    padding: 1.5rem;
+    button {
+        background-color: #4a90e2;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        font-size: .95rem;
+        font-weight: 500;
+        margin-top: 10px;
+        padding: .6rem 1rem;
+        transition: background-color .2s ease-in-out;
+        width: 100%;
+        &:hover {
+            background-color: #c1c1c1;
+        }
+    }
+    h2 {
+        color: #333;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+        text-align: center;
+    }
+    input, textarea {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: .95rem;
+        padding: .6rem .8rem;
+        transition: border-color .2s ease-in-out;
+        width: 95%;
+    }
+    input:focus, textarea:focus {
+        border-color: #4a90e2;
+        outline: none;
+    }
+    label {
+        color: #555;
+        display: block;
+        font-size: .95rem;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+    }
+
+}
+.PostForm-preview {
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px #0000001a;
+    //margin: 2rem auto;
+    margin-right: 2rem;
+    //max-width: 800px;
+    //min-width: 200px;
+    padding: 1.5rem;
+    flex:1;;
+    h1 {
+        color: #333;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 499px) {
+    .PostForm {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .PostForm-preview {
+        flex: 1 0 100%; 
+        overflow: scroll;
+        display: block;
+        overflow-wrap: 300px;
+    }
+    .PostForm {
+        flex: 1 0 100%;
+    }
+}
