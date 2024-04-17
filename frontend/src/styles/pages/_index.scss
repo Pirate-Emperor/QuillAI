@@ -1,0 +1,81 @@
+.IndexPage {
+    display: flex;
+}
+.IndexAllPosts {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0000001a;
+    //margin: 0 auto;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    //max-width: 650px;
+    padding: 2rem;
+
+    h1 {
+        color: #333;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    li {
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid #bebebe;
+        box-shadow: 0 2px 6px #0000000d;
+        margin-bottom: 1rem;
+        padding: 1.5rem;
+        transition: transform 0.3s ease-in-out;
+
+        .category {
+            color: #888;
+            font-size: .875rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        &:hover {
+            box-shadow: 0 5px 15px #0000001a;
+            transform: translateY(-5px);
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .posts {
+    display: flex; /* Разбить список на flexbox */
+    flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
+    justify-content: space-around; /* Распределить элементы равномерно */
+        
+    .post {
+        flex: 1 0 300px; 
+        margin: 10px;
+    }
+    @media (max-width: 768px) {
+        .posts .post {
+          flex: 1 0 50%; 
+        }
+      }
+    
+    }
+    @media (max-width: 499px) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
